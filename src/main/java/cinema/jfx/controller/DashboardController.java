@@ -37,7 +37,7 @@ public class DashboardController implements Initializable
         if (fullname != null) {
             adminlable.setText(fullname);
         } else {
-            adminlable.setText("No user logged in");
+            adminlable.setText("No name");
         }
     }
 }
