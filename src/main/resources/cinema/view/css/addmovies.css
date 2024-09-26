@@ -1,0 +1,39 @@
+.border{
+    -fx-background-color: #fff;
+    -fx-border-radius: 10px;
+}
+
+.import-button{
+    -fx-background-color: #3AD8E2;
+    -fx-border-radius: 10px;
+    -fx-font-weight: 700;
+}
+
+.update-button{
+    -fx-background-color: #45F235;
+    -fx-border-radius: 10px;
+    -fx-font-weight: 700;
+}
+
+.delete-button{
+    -fx-background-color: #F14848;
+    -fx-border-radius: 10px;
+    -fx-font-weight: 700;
+}
+
+.clear-button{
+    -fx-font-weight: 700;
+    -fx-background-color: #CD8CFF;
+    -fx-border-radius: 10px;
+}
+
+.insert-button{
+    -fx-font-weight: 700;
+    -fx-background-color: #5785FC;
+    -fx-border-radius: 10px;
+}
+
+.table{
+    -fx-background-color: linear-gradient(to bottom , #382674, #33C4CA );
+    -fx-background-radius: 0px 20px 20px 0px;
+}
