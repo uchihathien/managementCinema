@@ -29,5 +29,7 @@ public interface UserService {
 
     List<User> findAll();
 
+    String getCurrentUserFullname();
+
     void delete(int id);
 }
