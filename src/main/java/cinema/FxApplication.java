@@ -1,5 +1,6 @@
 package cinema;
 
+import cinema.jfx.controller.LoginController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -8,31 +9,20 @@ import javafx.stage.Stage;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
-import cinema.jfx.events.StartUpEvent;
 
 @SpringBootApplication
 public class FxApplication extends Application {
 
     private ConfigurableApplicationContext springContext;
-    private static String[] ARGS = null;
 
-    /**
-     * Entry point of the Java application.
-     * Launches the JavaFX application.
-     *
-     * @param args The command line arguments.
-     */
     public static void main(String[] args) {
         launch(args);
     }
 
     @Override
-    public void init() throws Exception {
-        // Lưu trữ các tham số dòng lệnh để khởi chạy Spring Context
-        ARGS = getParameters().getRaw().toArray(new String[0]);
-
+    public void init() {
         // Khởi động Spring context
-        springContext = new SpringApplicationBuilder(FxApplication.class).run(ARGS);
+        springContext = new SpringApplicationBuilder(FxApplication.class).run();
     }
 
     @Override
@@ -49,8 +39,9 @@ public class FxApplication extends Application {
             primaryStage.setTitle("Login");
             primaryStage.show();
 
-            // Gửi sự kiện StartUpEvent sau khi stage đã được hiển thị
-            springContext.publishEvent(new StartUpEvent(primaryStage));
+            // Lấy LoginController từ Spring context và truyền Stage vào
+            LoginController loginController = loader.getController();
+            loginController.setStage(primaryStage);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -58,7 +49,7 @@ public class FxApplication extends Application {
     }
 
     @Override
-    public void stop() throws Exception {
+    public void stop() {
         // Đóng Spring context khi ứng dụng dừng
         springContext.close();
     }

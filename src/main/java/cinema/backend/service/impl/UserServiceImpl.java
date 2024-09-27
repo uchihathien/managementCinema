@@ -2,6 +2,7 @@
 
 package cinema.backend.service.impl;
 
+import cinema.backend.util.CurrentUser;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -22,6 +23,7 @@ import java.util.Optional;
 public class UserServiceImpl implements UserService {
 
     private final UserRepo repo;
+    private final UserRepo userRepo;
 
 
     @Override
@@ -37,6 +39,22 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<User> findAll() {
         return repo.findAll();
+    }
+
+    @Override
+    public String getCurrentUserFullname() {
+       String username = CurrentUser.getInstance().getUsername();
+        if (username != null && !username.isEmpty()) {
+            Optional<User> user = userRepo.findByUserName(username);
+            if (user.isPresent()) {
+                User users = user.get();
+                return users.getFullName();
+            } else {
+                return "User not found";
+            }
+        }
+
+        return "No user logged in";
     }
 
     @Override
