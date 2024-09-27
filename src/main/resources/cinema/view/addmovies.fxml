@@ -15,51 +15,51 @@
          <children>
             <AnchorPane layoutX="273.0" layoutY="37.0" prefHeight="694.0" prefWidth="362.0" styleClass="border" stylesheets="@css/addmovies.css">
                <children>
-                  <Button layoutX="129.0" layoutY="269.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="105.0" styleClass="import-button" stylesheets="@css/addmovies.css" text="import">
+                  <Button fx:id="importButton" layoutX="111.0" layoutY="269.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="105.0" styleClass="import-button" stylesheets="@css/addmovies.css" text="import">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Button>
-                  <Label layoutX="27.0" layoutY="330.0" text="Movie Title:">
+                  <Label fx:id="titleLabel" layoutX="27.0" layoutY="330.0" text="Movie Title:">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="134.0" layoutY="333.0" prefHeight="30.0" prefWidth="200.0" />
-                  <Label layoutX="26.0" layoutY="366.0" text="Genre:">
+                  <TextField fx:id="titleInput" layoutX="134.0" layoutY="333.0" prefHeight="30.0" prefWidth="200.0" />
+                  <Label fx:id="GenreLabel" layoutX="26.0" layoutY="366.0" text="Genre:">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="133.0" layoutY="369.0" prefHeight="30.0" prefWidth="200.0" />
-                  <Label layoutX="28.0" layoutY="401.0" text="Duration:">
+                  <TextField fx:id="genreInput" layoutX="133.0" layoutY="369.0" prefHeight="30.0" prefWidth="200.0" />
+                  <Label fx:id="durationLabel" layoutX="28.0" layoutY="401.0" text="Duration:">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="135.0" layoutY="404.0" prefHeight="30.0" prefWidth="200.0" />
-                  <Label layoutX="27.0" layoutY="437.0" text="Date:">
+                  <TextField fx:id="durationInput" layoutX="135.0" layoutY="404.0" prefHeight="30.0" prefWidth="200.0" />
+                  <Label fx:id="dateLabel" layoutX="27.0" layoutY="437.0" text="Date:">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="134.0" layoutY="440.0" prefHeight="30.0" prefWidth="200.0" />
-                  <Button layoutX="58.0" layoutY="502.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="105.0" styleClass="insert-button" stylesheets="@css/addmovies.css" text="Insert">
+                  <TextField fx:id="dateInput" layoutX="134.0" layoutY="440.0" prefHeight="30.0" prefWidth="200.0" />
+                  <Button fx:id="insertButton" layoutX="58.0" layoutY="502.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="105.0" styleClass="insert-button" stylesheets="@css/addmovies.css" text="Insert">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Button>
-                  <Button layoutX="195.0" layoutY="502.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="105.0" styleClass="update-button" stylesheets="@css/addmovies.css" text="Update">
+                  <Button fx:id="updateButton" layoutX="195.0" layoutY="502.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="105.0" styleClass="update-button" stylesheets="@css/addmovies.css" text="Update">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Button>
-                  <Button layoutX="58.0" layoutY="551.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="105.0" styleClass="delete-button" stylesheets="@css/addmovies.css" text="Delete">
+                  <Button fx:id="deleteButton" layoutX="58.0" layoutY="551.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="105.0" styleClass="delete-button" stylesheets="@css/addmovies.css" text="Delete">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Button>
-                  <Button layoutX="195.0" layoutY="551.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="105.0" styleClass="clear-button" stylesheets="@css/addmovies.css" text="Clear">
+                  <Button fx:id="clearButton" layoutX="195.0" layoutY="551.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="105.0" styleClass="clear-button" stylesheets="@css/addmovies.css" text="Clear">
                      <font>
                         <Font size="15.0" />
                      </font>
@@ -138,25 +138,25 @@
             </AnchorPane>
             <AnchorPane layoutX="657.0" layoutY="37.0" prefHeight="694.0" prefWidth="598.0" styleClass="border" stylesheets="@css/addmovies.css">
                <children>
-                  <TextField layoutX="28.0" layoutY="14.0" prefHeight="40.0" prefWidth="250.0" promptText="Search" />
-                  <TabPane layoutX="24.0" layoutY="68.0" prefHeight="591.0" prefWidth="550.0" stylesheets="@css/addmovies.css" tabClosingPolicy="UNAVAILABLE">
+                  <TextField fx:id="searhInput" layoutX="28.0" layoutY="14.0" prefHeight="40.0" prefWidth="250.0" promptText="Search" />
+                  <TabPane fx:id="addMoviesTable" layoutX="24.0" layoutY="68.0" prefHeight="591.0" prefWidth="550.0" stylesheets="@css/addmovies.css" tabClosingPolicy="UNAVAILABLE">
                     <tabs>
-                      <Tab text="Movie Title">
+                      <Tab fx:id="movieTitleTable" text="Movie Title">
                         <content>
                           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                         </content>
                       </Tab>
-                      <Tab text="Genre">
+                      <Tab fx:id="genreTable" text="Genre">
                         <content>
                           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                         </content>
                       </Tab>
-                        <Tab text="Duration">
+                        <Tab fx:id="durationTable" text="Duration">
                            <content>
                               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                            </content>
                         </Tab>
-                        <Tab text="Showing Date">
+                        <Tab fx:id="dateTable" text="Showing Date">
                            <content>
                               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                            </content>
