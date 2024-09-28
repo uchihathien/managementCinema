@@ -12,8 +12,8 @@
     <Button text="Add Movies" fx:id="addMoviesButton" onAction="#handleAddMovies"/>
     <Button text="Booking" fx:id="bookingButton" onAction="#handleBooking"/>
     <Button text="Edit Screening" fx:id="editScreeningButton" onAction="#handleEditScreening"/>
-    <Button text="Customers" fx:id="customersButton" onAction="#handleCustomers"/>
-    <Button text="Charts" fx:id="chartsButton" onAction="#handleCharts"/>
+    <Button text="Customers" fx:id="customersButton" onAction="#handleEmployee"/>
+    <Button text="Charts" fx:id="chartsButton" onAction="#handleReport"/>
 
     <Button text="Sign out" fx:id="signOutButton" onAction="#handleSignOut"/>
 </VBox>

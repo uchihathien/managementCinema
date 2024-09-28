@@ -40,4 +40,11 @@ public class DashboardController implements Initializable
             adminlable.setText("No name");
         }
     }
+
+    public void haha(){
+
+    };
+
+
+
 }
