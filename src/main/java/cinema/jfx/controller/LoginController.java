@@ -73,7 +73,7 @@ public class LoginController {
             // Chuyển đến màn hình Dashboard
             try {
                 // Tải file FXML của dashboard
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/cinema/view/dashboard.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/cinema/view/test.fxml"));
                 loader.setControllerFactory(springContext::getBean); // Đảm bảo Spring quản lý controller của dashboard
 
                 Parent dashboardRoot = loader.load();
