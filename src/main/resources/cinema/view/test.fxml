@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="homepage-form" stylesheets="@css/homepage.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cinema.jfx.controller.DashboardController">
+    <children>
+        <HBox prefHeight="768.0" prefWidth="1280.0">
+            <fx:include source="navbar.fxml" />
+            <AnchorPane layoutX="273.0" layoutY="37.0" prefHeight="694.0" prefWidth="362.0" styleClass="border" stylesheets="@css/addmovies.css">
+                <children>
+                    <Button fx:id="importButton" layoutX="111.0" layoutY="269.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="105.0" styleClass="import-button" stylesheets="@css/addmovies.css" text="import">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                    </Button>
+                    <!-- Phần còn lại của mã giao diện chính -->
+                </children>
+            </AnchorPane>
+            <AnchorPane layoutX="657.0" layoutY="37.0" prefHeight="694.0" prefWidth="598.0" styleClass="border" stylesheets="@css/addmovies.css">
+                <children>
+                    <TextField fx:id="searhInput" layoutX="28.0" layoutY="14.0" prefHeight="40.0" prefWidth="250.0" promptText="Search" />
+                    <TabPane fx:id="addMoviesTable" layoutX="24.0" layoutY="68.0" prefHeight="591.0" prefWidth="550.0" stylesheets="@css/addmovies.css" tabClosingPolicy="UNAVAILABLE">
+                        <tabs>
+                            <Tab fx:id="movieTitleTable" text="Movie Title">
+                                <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                </content>
+                            </Tab>
+                            <!-- Phần còn lại của Tab -->
+                        </tabs>
+                    </TabPane>
+                </children>
+            </AnchorPane>
+        </HBox>
+    </children>
+</AnchorPane>

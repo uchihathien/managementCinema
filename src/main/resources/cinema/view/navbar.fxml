@@ -2,18 +2,77 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<VBox fx:id="navbar" spacing="10" alignment="TOP_LEFT" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cinema.jfx.controller.NavbarController" stylesheets="@css/homepage.css">
-    <Label fx:id="welcomeLabel" text="Welcome" styleClass="welcome-text"/>
-    <Label fx:id="adminLabel" text="Admin" styleClass="admin-text"/>
-
-    <Button text="Dashboard" fx:id="dashboardButton" onAction="#handleDashboard"/>
-    <Button text="Add Movies" fx:id="addMoviesButton" onAction="#handleAddMovies"/>
-    <Button text="Booking" fx:id="bookingButton" onAction="#handleBooking"/>
-    <Button text="Edit Screening" fx:id="editScreeningButton" onAction="#handleEditScreening"/>
-    <Button text="Customers" fx:id="customersButton" onAction="#handleCustomers"/>
-    <Button text="Charts" fx:id="chartsButton" onAction="#handleCharts"/>
-
-    <Button text="Sign out" fx:id="signOutButton" onAction="#handleSignOut"/>
-</VBox>
+<AnchorPane prefHeight="768.0" prefWidth="256.0" styleClass="bg-form" stylesheets="@css/css.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cinema.jfx.controller.NavbarController">
+    <children>
+        <Label fx:id="adminlabel" layoutX="96.0" layoutY="214.0" text="Admin" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Berlin Sans FB Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="80.0" layoutY="177.0" text="Welcome" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Berlin Sans FB" size="25.0" />
+            </font>
+        </Label>
+        <Button alignment="CENTER" layoutX="27.0" layoutY="267.0" mnemonicParsing="false" onAction="#handleDashboard" prefHeight="60.0" prefWidth="205.0" styleClass="nav" text="Dashboard">
+            <font>
+                <Font size="20.0" />
+            </font>
+            <graphic>
+                <ImageView fitHeight="50.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" />
+            </graphic>
+        </Button>
+        <Button layoutX="27.0" layoutY="337.0" mnemonicParsing="false" onAction="#handleAddMovies" prefHeight="60.0" prefWidth="205.0" styleClass="nav" text="Add Movies">
+            <font>
+                <Font size="20.0" />
+            </font>
+            <graphic>
+                <ImageView fitHeight="50.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" />
+            </graphic>
+        </Button>
+        <Button layoutX="27.0" layoutY="409.0" mnemonicParsing="false" onAction="#handleBooking" prefHeight="60.0" prefWidth="205.0" styleClass="nav" text="Booking">
+            <font>
+                <Font size="20.0" />
+            </font>
+            <graphic>
+                <ImageView fitHeight="50.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" />
+            </graphic>
+        </Button>
+        <Button layoutX="25.0" layoutY="480.0" mnemonicParsing="false" onAction="#handleEditScreening" prefHeight="60.0" prefWidth="205.0" styleClass="nav" text="Edit Screening">
+            <font>
+                <Font size="20.0" />
+            </font>
+            <graphic>
+                <ImageView fitHeight="50.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" />
+            </graphic>
+        </Button>
+        <Button layoutX="25.0" layoutY="555.0" mnemonicParsing="false" onAction="#handleEmployee" prefHeight="60.0" prefWidth="205.0" styleClass="nav" text="Customers">
+            <font>
+                <Font size="20.0" />
+            </font>
+            <graphic>
+                <ImageView fitHeight="50.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" />
+            </graphic>
+        </Button>
+        <Button layoutX="25.0" layoutY="627.0" mnemonicParsing="false" onAction="#handleReport" prefHeight="60.0" prefWidth="205.0" styleClass="nav" text="Charts">
+            <font>
+                <Font size="20.0" />
+            </font>
+            <graphic>
+                <ImageView fitHeight="50.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" />
+            </graphic>
+        </Button>
+        <Button layoutX="55.0" layoutY="720.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="149.0" styleClass="sign-out" text="Sign out">
+            <font>
+                <Font size="16.0" />
+            </font>
+            <graphic>
+                <ImageView fitHeight="30.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" />
+            </graphic>
+        </Button>
+    </children>
+</AnchorPane>

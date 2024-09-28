@@ -2,10 +2,12 @@ package cinema.jfx.controller;
 
 import cinema.FxApplication;
 
+import cinema.backend.util.CurrentUser;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -19,53 +21,60 @@ import java.util.ResourceBundle;
  * @author github: uchihathien
  * Created on 9/26/2024
  */
-@Component
+@Controller
 public class NavbarController implements Initializable {
 
     @FXML
     private VBox navbar;
 
+    @FXML
+    private Label adminlabel;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
+        String fullname = CurrentUser.getInstance().getFullName();
+        if (fullname != null && !fullname.isEmpty()) {
+            adminlabel.setText(fullname);
+        } else {
+            adminlabel.setText("No name");
+        }
     }
 
 
 
     @FXML
     private void handleDashboard() {
-        navigateTo("dashboard.fxml");
+        System.out.println(1);
     }
 
     @FXML
     private void handleAddMovies() {
-        navigateTo("addmovies.fxml");
+        System.out.println(2);
     }
 
     @FXML
     private void handleBooking() {
-        navigateTo("booking.fxml");
+        System.out.println(3);
     }
 
     @FXML
     private void handleEditScreening() {
-        navigateTo("editscreening.fxml");
+        System.out.println(4);
     }
 
     @FXML
     private void handleEmployee() {
-        navigateTo("employee.fxml");
+        System.out.println(5);
     }
 
     @FXML
     private void handleReport() {
-        navigateTo("report.fxml");
+        System.out.println(6);
     }
 
     @FXML
     private void handleSignOut() {
-        navigateTo("login.fxml");
+        System.out.println(7);
     }
     private ConfigurableApplicationContext springContext;
 
