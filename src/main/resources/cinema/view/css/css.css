@@ -55,3 +55,17 @@
 .homepage-form{
     -fx-background-color: #D9D9D9;
 }
+.circle{
+    -fx-background-color: none;
+    -fx-border-radius: 10px;
+    -fx-border-color: green;
+}
+
+.next-button{
+    -fx-background-color: #00FF66;
+}
+
+.back-button{
+    -fx-text-fill: white;
+    -fx-background-color: #3300FF;
+}
