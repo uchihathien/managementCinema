@@ -151,3 +151,10 @@
 }
 
 
+.chair-active{
+    -fx-background-color: #C30606;
+}
+
+.background-HD{
+    -fx-background-color: #438EFF;
+}
