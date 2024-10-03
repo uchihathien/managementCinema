@@ -69,3 +69,85 @@
     -fx-text-fill: white;
     -fx-background-color: #3300FF;
 }
+
+
+.border{
+    -fx-background-color: white;
+    -fx-background-radius: 20px;
+}
+
+
+/*Home page*/
+
+
+
+.homepage-form{
+    -fx-background-color: #D9D9D9;
+}
+
+.bg-button{
+    -fx-background-color: linear-gradient(to right , #382674, #33C4CA );
+    -fx-background-radius: 0px 20px 20px 0px;
+}
+
+
+.nav{
+    -fx-background-color: transparent;
+    -fx-text-fill: #fff;
+    -fx-border-color: black;
+    -fx-border-radius: 10px;
+}
+
+.sign-out{
+    -fx-background-color: transparent;
+    -fx-text-fill: #000000;
+}
+
+.bg-top{
+    -fx-background-color: #fff;
+    -fx-background-radius: 20px;
+}
+
+.number{
+    -fx-font-weight: 900;
+    -fx-font-size: 40px;
+    -fx-text-alignment: right;
+}
+
+
+.import-button{
+    -fx-background-color: #3AD8E2;
+    -fx-background-radius: 10px;
+    -fx-font-weight: 700;
+}
+
+.update-button{
+    -fx-background-color: #45F235;
+    -fx-border-radius: 10px;
+    -fx-font-weight: 700;
+}
+
+.delete-button{
+    -fx-background-color: #F14848;
+    -fx-background-radius: 10px;
+    -fx-font-weight: 700;
+}
+
+.clear-button{
+    -fx-font-weight: 700;
+    -fx-background-color: #CD8CFF;
+    -fx-background-radius: 10px;
+}
+
+.insert-button{
+    -fx-font-weight: 700;
+    -fx-background-color: #5785FC;
+    -fx-background-radius: 10px;
+}
+
+.table{
+    -fx-background-color: linear-gradient(to bottom , #382674, #33C4CA );
+    -fx-background-radius: 0px 20px 20px 0px;
+}
+
+
