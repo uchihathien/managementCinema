@@ -10,6 +10,7 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Circle?>
@@ -64,6 +65,16 @@
                         <Font name="System Bold" size="41.0" />
                      </font>
                   </Text>
+                  <ImageView fitHeight="87.0" fitWidth="115.0" layoutX="579.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/arrow.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="87.0" fitWidth="115.0" layoutX="831.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/arrow.png" />
+                     </image>
+                  </ImageView>
                </children>
             </AnchorPane>
             <AnchorPane prefHeight="768.0" prefWidth="1286.0" visible="false">
@@ -109,6 +120,11 @@
                               <Font size="33.0" />
                            </font>
                         </Label>
+                        <ImageView fitHeight="204.0" fitWidth="188.0" layoutX="88.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icon/empty.jpg" />
+                           </image>
+                        </ImageView>
                      </children>
                   </AnchorPane>
                   <AnchorPane layoutX="667.0" layoutY="47.0" prefHeight="694.0" prefWidth="598.0" styleClass="border" stylesheets="@css/css.css">
@@ -159,49 +175,38 @@
                             <font>
                                 <Font size="20.0" />
                             </font>
-                            <graphic>
-                                <ImageView fitHeight="50.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" />
-                            </graphic>
                         </Button>
                         <Button layoutX="27.0" layoutY="337.0" mnemonicParsing="false" onAction="#handleAddMovies" prefHeight="60.0" prefWidth="205.0" styleClass="nav" text="Add Movies">
                             <font>
                                 <Font size="20.0" />
                             </font>
-                            <graphic>
-                                <ImageView fitHeight="50.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" />
-                            </graphic>
                         </Button>
                         <Button layoutX="27.0" layoutY="409.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="205.0" styleClass="nav" text="Booking">
                             <font>
                                 <Font size="20.0" />
                             </font>
-                            <graphic>
-                                <ImageView fitHeight="50.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" />
-                            </graphic>
                         </Button>
                         <Button layoutX="25.0" layoutY="480.0" mnemonicParsing="false" onAction="#handleEditScreening" prefHeight="60.0" prefWidth="205.0" styleClass="nav" text="Edit Screening">
                             <font>
                                 <Font size="20.0" />
                             </font>
                             <graphic>
-                                <ImageView fitHeight="50.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" />
+                                <ImageView fitHeight="50.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icon/employee.png" />
+                           </image>
+                        </ImageView>
                             </graphic>
                         </Button>
-                        <Button layoutX="25.0" layoutY="555.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="205.0" styleClass="nav" text="Employee">
+                        <Button layoutX="25.0" layoutY="555.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="205.0" styleClass="nav" text="Employee" textAlignment="CENTER">
                             <font>
                                 <Font size="20.0" />
                             </font>
-                            <graphic>
-                                <ImageView fitHeight="50.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" />
-                            </graphic>
                         </Button>
                         <Button layoutX="25.0" layoutY="627.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="205.0" styleClass="nav" text="Report">
                             <font>
                                 <Font size="20.0" />
                             </font>
-                            <graphic>
-                                <ImageView fitHeight="50.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" />
-                            </graphic>
                         </Button>
                         <Button layoutX="55.0" layoutY="720.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="149.0" styleClass="sign-out" text="Sign out">
                             <font>
@@ -211,15 +216,48 @@
                                 <ImageView fitHeight="30.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" />
                             </graphic>
                         </Button>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="58.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/user.png" />
+                     </image>
+                  </ImageView>
+                          <ImageView fitHeight="50.0" fitWidth="41.0" layoutX="38.0" layoutY="633.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/employee.png" />
+                     </image>
+                  </ImageView>
+                          <ImageView fitHeight="50.0" fitWidth="41.0" layoutX="38.0" layoutY="561.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/employee.png" />
+                     </image>
+                  </ImageView>
+                          <ImageView fitHeight="50.0" fitWidth="41.0" layoutX="38.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/employee.png" />
+                     </image>
+                  </ImageView>
+                          <ImageView fitHeight="50.0" fitWidth="41.0" layoutX="35.0" layoutY="343.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/employee.png" />
+                     </image>
+                  </ImageView>
+                          <ImageView fitHeight="50.0" fitWidth="41.0" layoutX="35.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/employee.png" />
+                     </image>
+                  </ImageView>
                     </children>
                 </AnchorPane>
-            <AnchorPane prefHeight="768.0" prefWidth="1283.0" visible="false">
+            <AnchorPane layoutX="-4.0" prefHeight="768.0" prefWidth="1283.0" visible="false">
                <children>
                       <ImageView fitHeight="493.0" fitWidth="941.0" pickOnBounds="true" preserveRatio="true" x="297.0" y="245.0" />
                       <AnchorPane layoutX="293.0" layoutY="18.0" prefHeight="220.0" prefWidth="949.0" styleClass="bg-top" stylesheets="@css/css.css">
                           <children>
                               <Button layoutX="14.0" layoutY="25.0" mnemonicParsing="false" prefHeight="170.0" prefWidth="292.0" styleClass="bg-button" stylesheets="@css/css.css" />
-                              <ImageView fitHeight="105.0" fitWidth="105.0" layoutX="21.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="105.0" fitWidth="105.0" layoutX="21.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icon/ticketDashBoard.png" />
+                           </image></ImageView>
                               <Label layoutX="147.0" layoutY="148.0" stylesheets="@css/css.css" text="Total Sold Ticket" textAlignment="RIGHT" textFill="WHITE">
                                   <font>
                                       <Font size="20.0" />
@@ -231,7 +269,10 @@
                                   </font>
                               </Label>
                               <Button layoutX="326.0" layoutY="25.0" mnemonicParsing="false" prefHeight="170.0" prefWidth="292.0" styleClass="bg-button" stylesheets="@css/css.css" />
-                              <ImageView fitHeight="105.0" fitWidth="105.0" layoutX="328.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="105.0" fitWidth="105.0" layoutX="328.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icon/money.png" />
+                           </image></ImageView>
                               <Label layoutX="454.0" layoutY="148.0" stylesheets="@css/css.css" text="Total Income" textAlignment="RIGHT" textFill="WHITE">
                                   <font>
                                       <Font size="20.0" />
@@ -243,7 +284,10 @@
                                   </font>
                               </Label>
                               <Button layoutX="637.0" layoutY="25.0" mnemonicParsing="false" prefHeight="170.0" prefWidth="292.0" styleClass="bg-button" stylesheets="@css/css.css" />
-                              <ImageView fitHeight="105.0" fitWidth="105.0" layoutX="644.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="105.0" fitWidth="105.0" layoutX="644.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icon/play.png" />
+                           </image></ImageView>
                               <Label layoutX="770.0" layoutY="148.0" stylesheets="@css/css.css" text="Avaiable Movies" textAlignment="RIGHT" textFill="WHITE">
                                   <font>
                                       <Font size="20.0" />
@@ -262,7 +306,7 @@
                <children>
                   <AnchorPane layoutX="285.0" layoutY="57.0" prefHeight="694.0" prefWidth="362.0" styleClass="border" stylesheets="@css/addmovies.css">
                      <children>
-                        <Button fx:id="importButton" layoutX="111.0" layoutY="269.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="105.0" styleClass="import-button" stylesheets="@css/addmovies.css" text="import">
+                        <Button fx:id="importButton" layoutX="129.0" layoutY="268.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="105.0" styleClass="import-button" stylesheets="@css/addmovies.css" text="import">
                            <font>
                               <Font size="15.0" />
                            </font>
@@ -311,6 +355,11 @@
                               <Font size="15.0" />
                            </font>
                         </Button>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="88.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icon/empty.jpg" />
+                           </image>
+                        </ImageView>
                      </children>
                   </AnchorPane>
                   <AnchorPane layoutX="669.0" layoutY="57.0" prefHeight="694.0" prefWidth="598.0" styleClass="border" stylesheets="@css/addmovies.css">
@@ -348,7 +397,7 @@
                <children>
                   <AnchorPane layoutX="283.0" layoutY="47.0" prefHeight="694.0" prefWidth="362.0" styleClass="border" stylesheets="@css/addmovies.css">
                      <children>
-                        <Button fx:id="importButton1" layoutX="111.0" layoutY="269.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="105.0" styleClass="import-button" stylesheets="@css/addmovies.css" text="import">
+                        <Button fx:id="importButton1" layoutX="129.0" layoutY="269.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="105.0" styleClass="import-button" stylesheets="@css/addmovies.css" text="import">
                            <font>
                               <Font size="15.0" />
                            </font>
@@ -397,6 +446,11 @@
                               <Font size="15.0" />
                            </font>
                         </Button>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="87.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icon/empty.jpg" />
+                           </image>
+                        </ImageView>
                      </children>
                   </AnchorPane>
                   <AnchorPane layoutX="667.0" layoutY="47.0" prefHeight="694.0" prefWidth="598.0" styleClass="border" stylesheets="@css/addmovies.css">
@@ -435,16 +489,25 @@
                   <AnchorPane layoutX="302.0" layoutY="10.0" prefHeight="220.0" prefWidth="949.0" styleClass="bg-top">
                      <children>
                         <Button fx:id="revenueButton" layoutX="14.0" layoutY="25.0" mnemonicParsing="false" prefHeight="170.0" prefWidth="292.0" styleClass="bg-button" />
-                        <ImageView fitHeight="105.0" fitWidth="105.0" layoutX="21.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="105.0" fitWidth="105.0" layoutX="21.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icon/revenue.png" />
+                           </image></ImageView>
                         <Label fx:id="numberOfRevenue" layoutX="142.0" layoutY="148.0" text="36.320.000 VNĐ" textAlignment="RIGHT" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="20.0" />
                            </font>
                         </Label>
                         <Button fx:id="productsSoldButton" layoutX="326.0" layoutY="25.0" mnemonicParsing="false" prefHeight="170.0" prefWidth="292.0" styleClass="bg-button" />
-                        <ImageView fitHeight="105.0" fitWidth="105.0" layoutX="328.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="105.0" fitWidth="105.0" layoutX="328.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icon/box.png" />
+                           </image></ImageView>
                         <Button fx:id="totalTicketsButton" layoutX="637.0" layoutY="25.0" mnemonicParsing="false" prefHeight="170.0" prefWidth="292.0" styleClass="bg-button" />
-                        <ImageView fitHeight="105.0" fitWidth="105.0" layoutX="644.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="105.0" fitWidth="105.0" layoutX="644.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icon/ticket.png" />
+                           </image></ImageView>
                         <Label fx:id="revenueLabel" layoutX="180.0" layoutY="28.0" prefHeight="120.0" prefWidth="78.0" text="Tổng Doanh Thu" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                            <font>
                               <Font name="System Bold" size="25.0" />
@@ -507,7 +570,7 @@
                   </Button>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="768.0" prefWidth="1292.0" stylesheets="@css/css.css" visible="false">
+            <AnchorPane prefHeight="768.0" prefWidth="1292.0" stylesheets="@css/css.css">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="112.0" layoutX="457.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="border" width="625.0" />
                   <Circle fill="WHITE" layoutX="518.0" layoutY="71.0" radius="39.0" stroke="#1aff00" strokeType="INSIDE" strokeWidth="10.0" />
@@ -1036,6 +1099,16 @@
                         <Font size="22.0" />
                      </font>
                   </Text>
+                  <ImageView fitHeight="77.0" fitWidth="129.0" layoutX="573.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/arrowActive.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="77.0" fitWidth="129.0" layoutX="827.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/arrow.png" />
+                     </image>
+                  </ImageView>
                </children>
             </AnchorPane>
             <AnchorPane prefHeight="768.0" prefWidth="1289.0" visible="false">
@@ -1110,6 +1183,16 @@
                         <Font name="System Bold" size="23.0" />
                      </font>
                   </Button>
+                  <ImageView fitHeight="71.0" fitWidth="134.0" layoutX="574.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/arrowActive.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="81.0" fitWidth="149.0" layoutX="820.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/arrowActive.png" />
+                     </image>
+                  </ImageView>
                </children>
             </AnchorPane>
             <AnchorPane layoutX="2.0" prefHeight="768.0" prefWidth="1289.0" visible="false">
@@ -1167,7 +1250,7 @@
                   </Button>
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="-3.0" prefHeight="768.0" prefWidth="1289.0">
+            <AnchorPane layoutX="-3.0" prefHeight="768.0" prefWidth="1289.0" visible="false">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="673.0" layoutX="276.0" layoutY="27.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="984.0" />
                   <Button layoutX="276.0" layoutY="714.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="124.0" styleClass="back-button" stylesheets="@css/css.css" text="Back">
@@ -1181,12 +1264,12 @@
                      </font>
                   </Button>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9" height="343.0" layoutX="327.0" layoutY="54.0" stroke="BLACK" strokeType="INSIDE" width="406.0" />
-                  <Text layoutX="435.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vé xem phim (Ticket)" textAlignment="CENTER">
+                  <Text layoutX="435.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vé xem phim (Ticket)" textAlignment="CENTER">
                      <font>
                         <Font name="System Bold" size="19.0" />
                      </font>
                   </Text>
-                  <Text layoutX="488.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tên phim" textAlignment="CENTER">
+                  <Text layoutX="488.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tên phim" textAlignment="CENTER">
                      <font>
                         <Font name="System Bold" size="19.0" />
                      </font>
@@ -1227,12 +1310,12 @@
                      </font>
                   </Text>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9" height="272.0" layoutX="327.0" layoutY="397.0" stroke="BLACK" strokeType="INSIDE" width="406.0" />
-                  <Text layoutX="435.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vé xem phim (Ticket)" textAlignment="CENTER">
+                  <Text layoutX="434.0" layoutY="509.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vé xem phim (Ticket)" textAlignment="CENTER">
                      <font>
                         <Font name="System Bold" size="19.0" />
                      </font>
                   </Text>
-                  <Text layoutX="488.0" layoutY="514.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tên phim" textAlignment="CENTER">
+                  <Text layoutX="487.0" layoutY="537.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tên phim" textAlignment="CENTER">
                      <font>
                         <Font name="System Bold" size="19.0" />
                      </font>
@@ -1323,6 +1406,21 @@
                         <Font size="16.0" />
                      </font>
                   </Text>
+                  <ImageView fitHeight="170.0" fitWidth="179.0" layoutX="443.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/Logo.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="170.0" fitWidth="179.0" layoutX="884.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/Logo.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="170.0" fitWidth="179.0" layoutX="443.0" layoutY="364.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/Logo.png" />
+                     </image>
+                  </ImageView>
                </children>
             </AnchorPane>
             </children>
